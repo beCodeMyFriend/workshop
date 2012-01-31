@@ -7,7 +7,7 @@
  <!--[if lt IE 9]>
  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-<link rel="shortcut icon" href="images/favicon.gif" type="image/x-icon"/> 
+<link rel="shortcut icon" href="images/favicon.gif" type="image/x-icon"/>
 <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 <script src="../src/Cuore.js" type="text/javascript"></script>
         <script src="../src/Cuore.Core.js" type="text/javascript"></script>
@@ -31,13 +31,14 @@
         <script src="../src/Components/Cuore.Components.Nestable.js" type="text/javascript"></script>
         <script src="../src/Components/Cuore.Components.Input.js" type="text/javascript"></script>
         <script src="../src/Components/Cuore.Components.Button.js" type="text/javascript"></script>
-        <script src="../src/Components/Cuore.Components.TimeRange.js" type="text/javascript"></script>  
+        <script src="../src/Components/Cuore.Components.TimeRange.js" type="text/javascript"></script>
         <script src="../src/Components/Cuore.Components.Collapsable.js" type="text/javascript"></script>
         <script src="../src/Components/Cuore.Components.SwitchButton.js" type="text/javascript"></script>
         <script src="../src/Components/Cuore.Components.LabelPanel.js" type="text/javascript"></script>
         <script src="../src/Components/Cuore.Components.NumericSelector.js" type="text/javascript"></script>
         <script src="../src/Components/Cuore.Components.Link.js" type="text/javascript"></script>
-        
+        <script src="../src/Components/Cuore.Components.List.js" type="text/javascript"></script>
+
         <script src="../src/Handlers/Cuore.Handlers.SetText.js" type="text/javascript"></script>
         <script src="../src/Handlers/Cuore.Handlers.Executor.js" type="text/javascript"></script>
         <script src="../src/Handlers/Cuore.Handlers.Print.js" type="text/javascript"></script>
@@ -50,21 +51,22 @@
         <script src="../src/Renderers/Cuore.Renderers.SwitchButton.js" type="text/javascript"></script>
         <script src="../src/Renderers/Cuore.Renderers.NumericSelector.js" type="text/javascript"></script>
         <script src="../src/Renderers/Cuore.Renderers.Link.js" type="text/javascript"></script>
+        <script src="../src/Renderers/Cuore.Renderers.List.js" type="text/javascript"></script>
 
         <script src="../src/Services/Cuore.Services.Button.js" type="text/javascript"></script>
         <script src="../src/Services/Cuore.Services.Label.js" type="text/javascript"></script>
         <script src="../src/Services/Cuore.Services.Null.js" type="text/javascript"></script>
-        
-	
+
+
 	<script src="../src/Cuore.JService.js" type="text/javascript"></script>
-	
+
         <script src="js/src/HeartTweet.js" type="text/javascript"></script>
         <script src="js/src/TweetList.js" type="text/javascript"></script>
         <script src="js/src/ListRenderer.js" type="text/javascript"></script>
         <script src="js/src/TweetService.js" type="text/javascript"></script>
 	<script src="js/src/SearchHandler.js" type="text/javascript"></script>
-	
-	
+
+
         <script type="text/javascript">
             CUORE.Dom.ready(function() {
                 // cache for labelService
@@ -74,7 +76,7 @@
                 document.labels[currentLocale] = {
                     "label.input": "Que dice Twitter acerca de ....",
 		    "label.button": "Busca"
-                    
+
                 };
 
                 document.page = new HeartTweet("http://www.anydomain.com");
@@ -89,9 +91,9 @@
     <!--start header-->
     <header>
       <!--start logo-->
-      <a href="#" id="logo"><img src="img/cuore.png" height="150" alt="logo"/></a>    
+      <a href="#" id="logo"><img src="img/cuore.png" height="150" alt="logo"/></a>
       <!--end logo-->
-     
+
       <!--end header-->
 	</header>
    <!--start intro-->
@@ -107,11 +109,11 @@
          <h3>TweetHeart</h3>
          <p id="searchBox">
 	 <label>¿Que dice Twitter acerca de ....</label>
-	 <input type='text'></input>   
+	 <input type='text'></input>
 	 </p>
-         
+
          <a href="#" id='searchButton'><span class="button">Busca</span></a>
-         
+
        </section>
       <section class="group2">
          <h3>En Twitter se dice ...</h3>
@@ -169,14 +171,14 @@
 	 <span>
        </section>
 	</div>
-	
+
    </div>
    <!--end container-->
    <!--start footer-->
    <footer>
-      <div class="container">  
+      <div class="container">
          <div id="FooterTwo"> © 2011 Minimalism </div>
-         <div id="FooterTree"> Valid html5, design and code by <a href="http://www.marijazaric.com">marija zaric - creative simplicity</a> </div> 
+         <div id="FooterTree"> Valid html5, design and code by <a href="http://www.marijazaric.com">marija zaric - creative simplicity</a> </div>
       </div>
    </footer>
    <!--end footer-->
